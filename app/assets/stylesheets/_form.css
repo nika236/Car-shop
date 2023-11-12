@@ -1,0 +1,9 @@
+.my-form-field {
+    margin-bottom: 10px;
+}
+
+.custom-input {
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

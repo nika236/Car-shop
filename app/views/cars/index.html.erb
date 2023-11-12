@@ -1,0 +1,13 @@
+<h1>List of Cars</h1>
+<div>
+  <% @cars.each do |car| %>
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+      <%= render car %>
+      <p><%= link_to "Show", car %></p>
+      <p><%= link_to "Edit",edit_car_path(car)%></p>
+      <%= link_to 'Delete', car_path(car), data:{turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+    </div>
+  <% end %>
+</div>
+
+<p><%= link_to "Add Car", new_car_path %></p>
